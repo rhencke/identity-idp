@@ -1,6 +1,8 @@
 require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
+require 'raise-if-root'
+
 Bundler.require(*Rails.groups)
 
 APP_NAME = 'login.gov'.freeze
