@@ -23,7 +23,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = if Figaro.env.disable_email_sending == 'true'
                                            :test
                                          else
-                                           :mandrill
+                                           :ses
                                          end
 
   routes.default_url_options[:protocol] = :https
