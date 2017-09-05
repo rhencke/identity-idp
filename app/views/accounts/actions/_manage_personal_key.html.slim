@@ -1,4 +1,7 @@
-= link_to manage_personal_key_path do
-  span.hide
-    = t('account.items.personal_key')
-  = t('account.links.regenerate_personal_key')
+= button_to(t('account.links.regenerate_personal_key'), create_new_personal_key_path, method: :post,
+    class: 'btn btn-link ml1', form_class: 'inline-block')
+
+/ = link_to manage_personal_key_path do
+/   span.hide
+/     = t('account.items.personal_key')
+/   = t('account.links.regenerate_personal_key')
